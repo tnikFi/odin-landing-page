@@ -17,6 +17,7 @@
     --hero-secondary-font: 18px roboto;
     --header-logo-font: 500 24px roboto;
     --info-header-font: 900 36px roboto;
+    --info-font: light 18px roboto;
     --quote-font: 36px italic light roboto;
 }
 
@@ -36,8 +37,8 @@ body>div {
 /* Common properties for all buttons */
 button {
     all: unset;
-    border-radius: 4px;
-    padding: 4px 24px;
+    border-radius: 8px;
+    padding: 8px 32px;
 }
 
 /* Header styles */
@@ -108,4 +109,52 @@ button {
     color: var(--hero-color);
     font: var(--hero-secondary-font);
     font-weight: 500;
+}
+
+/* Information section */
+.information {
+    padding-top: 32px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.information h2 {
+    margin: 0;
+    color: var(--info-header-color);
+    font: var(--info-header-font);
+}
+
+/* Info block container */
+.information>.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.info-block {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 8px;
+}
+
+.info-block img {
+    border-radius: 8px;
+    border: 4px solid var(--button-color);
+}
+
+.info-block .text {
+    flex: 1;
+    text-align: center;
+    word-wrap: break-word;
+    color: var(--info-header-color);
+    font: var(--info-font);
 }
